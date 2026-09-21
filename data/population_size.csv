@@ -1,0 +1,18 @@
+site,season,estimate,ci_low,ci_high,basis
+Little Cayman,2006,2267,1910.0,2636.0,integrated model (video-anchored); Waterhouse et al. 2020 PNAS
+Little Cayman,2007,2000,,,interpolated 2006-2008
+Little Cayman,2008,1732,1110.0,2761.0,mark-resight
+Little Cayman,2016,4074,3406.0,5023.0,mark-resight
+Little Cayman,2017,6821,5636.0,8425.0,mark-resight
+Little Cayman,2018,5223,4413.0,6310.0,mark-resight
+Little Cayman,2019,6447,5446.0,7706.0,mark-resight
+Little Cayman,2020,7706,7251.0,10312.0,mark-resight
+Little Cayman,2021,8173,,,"interpolated 2020-2022 (no survey, COVID-19)"
+Little Cayman,2022,8640,7354.0,10084.0,mark-resight
+Little Cayman,2023,8351,7435.0,9415.0,mark-resight
+Little Cayman,2024,9542,8551.0,10776.0,mark-resight (27-30 Jan survey window)
+Cayman Brac,2007,520,,,"mark-resight 2008 (Waterhouse et al. 2020, their Fig. 3); ~constant 2008-2017"
+Cayman Brac,2008,520,,,"mark-resight 2008 (Waterhouse et al. 2020, their Fig. 3); ~constant 2008-2017"
+Cayman Brac,2009,520,,,"mark-resight 2008 (Waterhouse et al. 2020, their Fig. 3); ~constant 2008-2017"
+Cayman Brac,2010,520,,,"mark-resight 2008 (Waterhouse et al. 2020, their Fig. 3); ~constant 2008-2017"
+Cayman Brac,2011,520,,,"mark-resight 2008 (Waterhouse et al. 2020, their Fig. 3); ~constant 2008-2017"
