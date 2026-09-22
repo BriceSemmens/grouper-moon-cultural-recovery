@@ -104,5 +104,19 @@ lrt = 2 * (m1.llf - m0.llf)
 say(f"\nSex (n = {len(ds)}): LRT chi2 = {lrt:.2f}, P = {stats.chi2.sf(lrt, 1):.3f}; "
     f"median hours {ds.groupby('Sex').hours.median().to_dict()}")
 
+# A sex x population-size interaction reaches significance in the pooled data, but the
+# constant Cayman Brac population size makes it formally equivalent to a sex x island
+# contrast; it vanishes when the analysis is restricted to Little Cayman. It is
+# therefore a design artifact, not a finding (see supplement).
+m2 = smf.mixedlm("ln_hours ~ length_proj + ln_pop * Sex", ds, groups=ds.year_f).fit(reml=False)
+lrt2 = 2 * (m2.llf - m1.llf)
+say(f"Sex x ln(popsize) interaction (pooled): LRT chi2 = {lrt2:.2f}, P = {stats.chi2.sf(lrt2, 1):.4f}")
+dslc = ds[ds.island == "LC"].copy()
+m0lc = smf.mixedlm("ln_hours ~ length_proj + ln_pop + Sex", dslc, groups=dslc.year_f).fit(reml=False)
+m2lc = smf.mixedlm("ln_hours ~ length_proj + ln_pop * Sex", dslc, groups=dslc.year_f).fit(reml=False)
+lrt2lc = 2 * (m2lc.llf - m0lc.llf)
+say(f"  Little Cayman only (n = {len(dslc)}): LRT chi2 = {lrt2lc:.2f}, "
+    f"P = {stats.chi2.sf(lrt2lc, 1):.4f}")
+
 open(os.path.join(OUT, "tenure_model_summary.txt"), "w").write("\n".join(lines) + "\n")
 say("\nwrote output/tenure_model_selection.csv and tenure_model_summary.txt")

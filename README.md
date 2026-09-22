@@ -24,6 +24,7 @@ analysis/
   04_spawn_timing/             spawn-timing trends, acoustic support, SST check + Fig. 4
   05_map_and_movie/            study-site map (fig. S1) + movement animation (Movie S1)
 output/                        everything the scripts write (tables, figures, summaries)
+R_check/                       independent R refits of the key models (verification)
 ```
 
 ## Running the analyses

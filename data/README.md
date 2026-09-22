@@ -5,7 +5,7 @@ UTC unless stated; the Cayman Islands sit at UTC-5 year-round.
 
 ## detections_nassau_LC_CB.csv.gz
 Acoustic detections of tagged Nassau Grouper on the Little Cayman (LC) and Cayman Brac
-(CB) receiver arrays, 2005-2025 (2,673,322 rows, 125 fish). Assembled from the raw
+(CB) receiver arrays, 2005-2025 (2,673,316 rows, 125 fish). Assembled from the raw
 receiver downloads; transmitter codes are resolved to animals through their deployment
 windows (tag numbers were re-used across animals), and detections outside a
 transmitter's window on an animal are removed.
@@ -25,6 +25,9 @@ supplement. Columns: animal_id, capture_date, island, location_name, transmitter
 tag_valid_from/until (deployment window), length_cm (total length at tagging),
 weight_kg, sex_best (best available sex assignment), tag_family, tag_delay_min_s /
 tag_delay_max_s (nominal random transmission delay), tag_est_life_days.
+One fish (GMP-0052, tagged at Little Cayman in 2005) was never detected on any
+receiver and therefore appears in this table but not in the detection file (126
+rows here; 125 fish with detections).
 
 ## station_locations.csv
 One position per canonical receiver station (deployment-mean position: receivers were
