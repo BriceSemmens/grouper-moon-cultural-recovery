@@ -48,9 +48,9 @@ video census program of Waterhouse et al. 2020 (PNAS 117:1587-1595) continued th
 Little Cayman seasons and the constant Cayman Brac value.
 
 ## spawn_timing_observed.csv
-Diver-observed spawning dates at Little Cayman, 2002-2023 (no gaps): season, first
-observed spawning (obs_onset), and peak observed spawning (obs_peak), both in days
-after the full moon.
+Diver-observed spawning dates at Little Cayman, 2002-2026 (no spawning-season survey
+was possible in 2025): season, first observed spawning (obs_onset), and peak observed
+spawning (obs_peak), both in days after the full moon.
 
 ## spawn_timing_acoustic.csv
 Acoustic peak arrival day per island-season, derived from the detection file: for each

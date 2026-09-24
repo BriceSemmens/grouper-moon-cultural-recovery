@@ -13,9 +13,9 @@
 # is the one to compare against the Python output.
 #
 # Python (statsmodels) values to reproduce (1x per-year log-scale slopes):
-#   peak   -0.0275/yr [-0.0469, -0.0081]  P(z) = 0.0054   dispersion 0.40
-#   onset  -0.0415/yr [-0.0652, -0.0178]  P(z) = 0.0006   dispersion 0.46
-#   OLS comparison: peak -0.128 d/yr (P = 0.010); onset -0.152 d/yr (P = 0.003)
+#   peak   -0.0262/yr [-0.0427, -0.0097]  P(z) = 0.0019   dispersion 0.37
+#   onset  -0.0419/yr [-0.0633, -0.0205]  P(z) = 0.0001   dispersion 0.47
+#   OLS comparison: peak -0.119 d/yr (P = 0.005); onset -0.147 d/yr (P = 0.001)
 #
 # Usage:  Rscript 03_spawn_timing_check.R     (from this directory)
 

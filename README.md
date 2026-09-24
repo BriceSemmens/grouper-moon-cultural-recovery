@@ -52,7 +52,7 @@ on the PATH (`--still` renders two PNG frames instead of the full movie).
 | Attendance | 156/158 fish-seasons attended = 98.7% (95% CI 95.5-99.7) |
 | Travel distance | standardized population-size effect on log distance -0.193 (95% CI -0.371 to -0.014), P = 0.034; n = 153 migratory fish-seasons |
 | Aggregation tenure | -23% hours per doubling of population size (95% CI -31 to -13), P = 3.4e-05; +26% per 10 cm projected length (95% CI +8 to +47), P = 0.004 |
-| Spawn timing | peak spawning -24% DAFM per decade (P = 0.005); onset -34% per decade (P = 0.0006); acoustic arrival -1.3 d/decade (P = 0.06, consistent, not confirmatory) |
+| Spawn timing | peak spawning -23% DAFM per decade (P = 0.002); onset -34% per decade (P = 0.0001); acoustic arrival -1.3 d/decade (P = 0.06, consistent, not confirmatory) |
 
 Each model script's docstring states its expected output, and the written summaries in
 `output/` carry the full numbers.

@@ -44,7 +44,9 @@ def say(s=""):
 
 
 obs = pd.read_csv(os.path.join(DATA, "spawn_timing_observed.csv"))
-say(f"observed record: {obs.season.min()}-{obs.season.max()}, n = {len(obs)} seasons, no gaps")
+missing = sorted(set(range(int(obs.season.min()), int(obs.season.max()) + 1)) - set(obs.season))
+say(f"observed record: {obs.season.min()}-{obs.season.max()}, n = {len(obs)} seasons"
+    + (f" (unsampled: {', '.join(map(str, missing))})" if missing else ", no gaps"))
 
 
 def trend(y, label):
