@@ -3,7 +3,7 @@
 Data and analysis code for:
 
 > Semmens BX, McCoy CM, Pattengill-Semmens CV, Heppell SA, Johnson BC, Candelmo A,
-> Waterhouse L, Bush PG. *Cultural reorganization across two decades of recovery in a
+> Waterhouse L, Gittings SR, Bush PG. *Cultural reorganization across two decades of recovery in a
 > critically endangered reef fish.* (in review)
 
 Two decades (2005-2025) of whole-island passive acoustic telemetry of Nassau Grouper
@@ -66,6 +66,10 @@ screened fish-season tables. See `R_check/README.md`.
 Analyses were originally developed in R by B. X. Semmens; this repository
 implements them in Python (ported and verified with AI assistance), with R
 cross-checks of the key models under `R_check/`.
+
+## Citation
+
+This repository (v1.1.0) is permanently archived at Zenodo: [doi:10.5281/zenodo.22937754](https://doi.org/10.5281/zenodo.22937754). Cite the archive alongside the paper above.
 
 ## Data use
 
